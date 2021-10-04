@@ -13,7 +13,7 @@ public class MyCallable implements Callable <Integer> {
     public Integer call() throws Exception {
        Integer counter = 1;
        for (int i=1;i<5;i++){
-            System.out.println("Thread name " + name + " My message of counter: " + i);
+            System.out.println("Hello! My name is:" + name + " My message: " + i);
             Thread.sleep(400);
             counter++;
        }return counter;
